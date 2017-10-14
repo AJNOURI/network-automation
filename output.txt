@@ -1,0 +1,197 @@
+execve("/bin/bash", ["bash", "install"], [/* 35 vars */]) = 0
+brk(0)                                  = 0xfd1000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fba03689000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=173224, ...}) = 0
+mmap(NULL, 173224, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fba0365e000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libncurses.so.5", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320l\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=151120, ...}) = 0
+mmap(NULL, 2246824, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fba03246000
+mprotect(0x7fba0326a000, 2093056, PROT_NONE) = 0
+mmap(0x7fba03469000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x23000) = 0x7fba03469000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libtinfo.so.5", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\316\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=171800, ...}) = 0
+mmap(NULL, 2269152, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fba0301c000
+mprotect(0x7fba03042000, 2093056, PROT_NONE) = 0
+mmap(0x7fba03241000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x25000) = 0x7fba03241000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\16\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=14664, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fba0365d000
+mmap(NULL, 2109712, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fba02e18000
+mprotect(0x7fba02e1b000, 2093056, PROT_NONE) = 0
+mmap(0x7fba0301a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fba0301a000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\34\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1738176, ...}) = 0
+mmap(NULL, 3844640, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fba02a6d000
+mprotect(0x7fba02c0e000, 2097152, PROT_NONE) = 0
+mmap(0x7fba02e0e000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1a1000) = 0x7fba02e0e000
+mmap(0x7fba02e14000, 14880, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fba02e14000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fba0365c000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fba0365b000
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fba0365a000
+arch_prctl(ARCH_SET_FS, 0x7fba0365b700) = 0
+mprotect(0x7fba02e0e000, 16384, PROT_READ) = 0
+mprotect(0x7fba0301a000, 4096, PROT_READ) = 0
+mprotect(0x7fba03241000, 16384, PROT_READ) = 0
+mprotect(0x7fba03469000, 4096, PROT_READ) = 0
+mprotect(0x6f1000, 4096, PROT_READ)     = 0
+mprotect(0x7fba0368b000, 4096, PROT_READ) = 0
+munmap(0x7fba0365e000, 173224)          = 0
+open("/dev/tty", O_RDWR|O_NONBLOCK)     = 3
+close(3)                                = 0
+brk(0)                                  = 0xfd1000
+brk(0xfd2000)                           = 0xfd2000
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1607760, ...}) = 0
+mmap(NULL, 1607760, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fba034d1000
+close(3)                                = 0
+brk(0xfd3000)                           = 0xfd3000
+brk(0xfd4000)                           = 0xfd4000
+getuid()                                = 1000
+getgid()                                = 1000
+geteuid()                               = 1000
+getegid()                               = 1000
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+brk(0xfd5000)                           = 0xfd5000
+open("/proc/meminfo", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fba03688000
+read(3, "MemTotal:       16427032 kB\nMemF"..., 1024) = 1024
+close(3)                                = 0
+munmap(0x7fba03688000, 4096)            = 0
+brk(0xfd6000)                           = 0xfd6000
+rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7fba02aa20e0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGCHLD, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7fba02aa20e0}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7fba02aa20e0}, 8) = 0
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7fba02aa20e0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7fba02aa20e0}, {SIG_DFL, [], SA_RESTORER, 0x7fba02aa20e0}, 8) = 0
+rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7fba02aa20e0}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGQUIT, {SIG_DFL, [], SA_RESTORER, 0x7fba02aa20e0}, {SIG_DFL, [], SA_RESTORER, 0x7fba02aa20e0}, 8) = 0
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+rt_sigaction(SIGQUIT, {SIG_IGN, [], SA_RESTORER, 0x7fba02aa20e0}, {SIG_DFL, [], SA_RESTORER, 0x7fba02aa20e0}, 8) = 0
+uname({sys="Linux", node="gns3-iouvm", ...}) = 0
+brk(0xfd7000)                           = 0xfd7000
+brk(0xfd8000)                           = 0xfd8000
+brk(0xfd9000)                           = 0xfd9000
+stat("/home/ajn/github/gns3-pycharm", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat(".", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getpid()                                = 25213
+open("/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=26258, ...}) = 0
+mmap(NULL, 26258, PROT_READ, MAP_SHARED, 3, 0) = 0x7fba03682000
+close(3)                                = 0
+brk(0xfda000)                           = 0xfda000
+getppid()                               = 25210
+stat(".", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajn/bin/bash", 0x7ffcf95fcce0) = -1 ENOENT (No such file or directory)
+stat("/usr/local/bin/bash", 0x7ffcf95fcce0) = -1 ENOENT (No such file or directory)
+stat("/usr/bin/bash", 0x7ffcf95fcce0)   = -1 ENOENT (No such file or directory)
+stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1029624, ...}) = 0
+stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1029624, ...}) = 0
+geteuid()                               = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+getgid()                                = 1000
+access("/bin/bash", X_OK)               = 0
+stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1029624, ...}) = 0
+geteuid()                               = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+getgid()                                = 1000
+access("/bin/bash", R_OK)               = 0
+stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1029624, ...}) = 0
+stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1029624, ...}) = 0
+geteuid()                               = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+getgid()                                = 1000
+access("/bin/bash", X_OK)               = 0
+stat("/bin/bash", {st_mode=S_IFREG|0755, st_size=1029624, ...}) = 0
+geteuid()                               = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+getgid()                                = 1000
+access("/bin/bash", R_OK)               = 0
+brk(0xfdb000)                           = 0xfdb000
+brk(0xfdc000)                           = 0xfdc000
+getpgrp()                               = 25210
+rt_sigaction(SIGCHLD, {0x446580, [], SA_RESTORER|SA_RESTART, 0x7fba02aa20e0}, {SIG_DFL, [], SA_RESTORER|SA_RESTART, 0x7fba02aa20e0}, 8) = 0
+getrlimit(RLIMIT_NPROC, {rlim_cur=64057, rlim_max=64057}) = 0
+brk(0xfdd000)                           = 0xfdd000
+brk(0xfde000)                           = 0xfde000
+rt_sigprocmask(SIG_BLOCK, NULL, [], 8)  = 0
+open("install", O_RDONLY)               = 3
+ioctl(3, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffcf95fcfe0) = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "pip install docopt==0.6.2\n", 80) = 26
+lseek(3, 0, SEEK_SET)                   = 0
+getrlimit(RLIMIT_NOFILE, {rlim_cur=64*1024, rlim_max=64*1024}) = 0
+fcntl(255, F_GETFD)                     = -1 EBADF (Bad file descriptor)
+dup2(3, 255)                            = 255
+close(3)                                = 0
+fcntl(255, F_SETFD, FD_CLOEXEC)         = 0
+fcntl(255, F_GETFL)                     = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+fstat(255, {st_mode=S_IFREG|0755, st_size=26, ...}) = 0
+lseek(255, 0, SEEK_CUR)                 = 0
+brk(0xfdf000)                           = 0xfdf000
+read(255, "pip install docopt==0.6.2\n", 26) = 26
+stat(".", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/ajn/bin/pip", 0x7ffcf95fccb0) = -1 ENOENT (No such file or directory)
+stat("/usr/local/bin/pip", {st_mode=S_IFREG|0755, st_size=362, ...}) = 0
+stat("/usr/local/bin/pip", {st_mode=S_IFREG|0755, st_size=362, ...}) = 0
+geteuid()                               = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+getgid()                                = 1000
+access("/usr/local/bin/pip", X_OK)      = 0
+stat("/usr/local/bin/pip", {st_mode=S_IFREG|0755, st_size=362, ...}) = 0
+geteuid()                               = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+getgid()                                = 1000
+access("/usr/local/bin/pip", R_OK)      = 0
+stat("/usr/local/bin/pip", {st_mode=S_IFREG|0755, st_size=362, ...}) = 0
+stat("/usr/local/bin/pip", {st_mode=S_IFREG|0755, st_size=362, ...}) = 0
+geteuid()                               = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+getgid()                                = 1000
+access("/usr/local/bin/pip", X_OK)      = 0
+stat("/usr/local/bin/pip", {st_mode=S_IFREG|0755, st_size=362, ...}) = 0
+geteuid()                               = 1000
+getegid()                               = 1000
+getuid()                                = 1000
+getgid()                                = 1000
+access("/usr/local/bin/pip", R_OK)      = 0
+rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+clone(child_stack=0, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7fba0365b9d0) = 25215
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigaction(SIGINT, {0x443740, [], SA_RESTORER, 0x7fba02aa20e0}, {SIG_DFL, [], SA_RESTORER, 0x7fba02aa20e0}, 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 25215
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7fba02aa20e0}, {0x443740, [], SA_RESTORER, 0x7fba02aa20e0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=25215, si_uid=1000, si_status=0, si_utime=45, si_stime=4} ---
+wait4(-1, 0x7ffcf95fc7d0, WNOHANG, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn()                          = 0
+read(255, "", 26)                       = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
