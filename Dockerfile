@@ -62,6 +62,6 @@ RUN git clone https://github.com/AJNOURI/topconfig
 RUN PATH=$PATH:/scripts/PycharmProjects/topconfig 
 
 WORKDIR /scripts/PycharmProjects/topconfig
-
+RUN chmod a+x topconfig
 
 VOLUME /root /scripts
