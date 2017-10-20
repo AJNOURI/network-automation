@@ -41,7 +41,6 @@ RUN apt-get update && apt-get -y --no-install-recommends install \
     && pip install pexpect
 
 
-#    openjdk-9-jre \
 RUN export JAVA_HOME=/usr/lib/jvm/default-java
 
 RUN wget https://download.jetbrains.com/python/pycharm-community-2017.2.3.tar.gz
@@ -56,5 +55,13 @@ RUN chmod a+x /etc/sv/pycharm/run
 RUN ln -s /etc/sv/pycharm /etc/service
 
 RUN pip install docopt==0.6.2 sh
+
+RUN mkdir /scripts/PycharmProjects
+WORKDIR /scripts/PycharmProjects
+RUN git clone https://github.com/AJNOURI/topconfig
+RUN PATH=$PATH:/scripts/PycharmProjects/topconfig 
+
+WORKDIR /scripts/PycharmProjects/topconfig
+
 
 VOLUME /root /scripts
