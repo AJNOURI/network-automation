@@ -49,7 +49,7 @@ RUN wget https://download.jetbrains.com/python/pycharm-community-2017.2.3.tar.gz
 RUN mkdir ${PYCHARM_HOME} && tar -xzvf pycharm-community-2017.2.3.tar.gz -C ${PYCHARM_HOME} --strip=1 &&\
     wget -P /tmp/ https://bootstrap.pypa.io/get-pip.py && python /tmp/get-pip.py &&\
     rm -rf /var/lib/apt-lists; rm -rf /tmp/*; apt-get purge wget -y; apt-get autoremove -y
-
+RUN mkdir /scripts
 RUN mkdir /etc/sv/pycharm
 ADD pycharm-run /etc/sv/pycharm/run
 RUN chmod a+x /etc/sv/pycharm/run
@@ -57,4 +57,4 @@ RUN ln -s /etc/sv/pycharm /etc/service
 
 RUN pip install docopt==0.6.2 sh
 
-VOLUME /root
+VOLUME /root /scripts
